@@ -91,6 +91,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   max-height: 386px;
   margin-bottom: 16px;
@@ -103,7 +104,7 @@ ol {
   object-position: center;
 }
 
-result__video:hover {
+.result__video:hover {
   /* Чтобы курсор был на по всей площпди видео */
   cursor: pointer;
 }
@@ -127,6 +128,7 @@ result__video:hover {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
