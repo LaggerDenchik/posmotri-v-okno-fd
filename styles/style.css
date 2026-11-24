@@ -53,19 +53,32 @@ ol {
   background-color: #d9d9d9;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
 .content {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  gap: 30px;
   max-width: 1140px;
   height: 534px;
-  gap: 30px;
 }
 
 .result {
-  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .result__video-container {
@@ -91,13 +104,17 @@ ol {
   flex-direction: column;
   gap: 26px;
   width: 100%;
+  min-width: 0;
   height: 100%;
+  font-family: "Oswald";
+  font-style: normal;
 }
 
 .content__list-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 2px;
   overflow: hidden scroll;
 }
 
@@ -121,4 +138,39 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  min-width: 0;
+}
+
+.content__card-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  margin-bottom: 6px;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  display: -webkit-box;
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px; /* Увеличил на 1px, потому что начинает обризать торчащие элементы текста*/
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.search-form__fieldset-title {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
